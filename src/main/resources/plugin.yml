@@ -1,0 +1,4 @@
+name: StartStopPinger
+main: com.github.fluffyfoxuwu.startstoppinger.StartStopPinger
+version: 0.0.1
+author: Fluffy Fox
