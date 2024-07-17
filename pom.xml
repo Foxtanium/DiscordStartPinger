@@ -6,7 +6,7 @@
 
   <groupId>com.foxtanium.fluffyfox</groupId>
   <artifactId>DiscordStartPinger</artifactId>
-  <version>0.0.1a</version>
+  <version>0.0.2</version>
 
   <name>DiscordStartPinger</name>
   <!-- FIXME change it to the project's website -->
