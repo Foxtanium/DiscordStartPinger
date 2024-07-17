@@ -1,4 +1,4 @@
-package com.github.fluffyfoxuwu.startstoppinger;
+package com.foxtanium.fluffyfox.discordstartpinger;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.awt.Color;
