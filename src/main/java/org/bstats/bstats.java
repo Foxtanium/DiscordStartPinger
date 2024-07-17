@@ -1,7 +1,9 @@
+package org.bstats;
+
 import net.md_5.bungee.api.plugin.Plugin;
 import org.bstats.bungeecord.Metrics;
 
-public class org.bstats extends Plugin {
+public class bstats extends Plugin {
 
     @Override
     public void onEnable() {
