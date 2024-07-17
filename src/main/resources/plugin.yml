@@ -1,4 +1,4 @@
-name: StartStopPinger
-main: com.github.fluffyfoxuwu.startstoppinger.StartStopPinger
-version: 0.0.1
-author: Fluffy Fox
+name: DiscordStartPinger
+main: com.foxtanium.fluffyfox.discordstartpinger.DiscordStartPinger
+version: 0.0.2
+author: Fluffy Fox, Fjox
