@@ -4,13 +4,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.github.fluffyfoxuwu</groupId>
-  <artifactId>startstoppinger</artifactId>
-  <version>0.0.1</version>
+  <groupId>com.foxtanium.fluffyfox</groupId>
+  <artifactId>DiscordStartPinger</artifactId>
+  <version>0.0.1a</version>
 
-  <name>startstoppinger</name>
+  <name>DiscordStartPinger</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://github.com/Foxtanium/DiscordStartPinger/</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,6 +31,13 @@
       <artifactId>waterfall-api</artifactId>
       <version>1.19-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.bstats</groupId>
+      <artifactId>bstats-bungeecord</artifactId>
+      <version>3.0.2</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
 
@@ -75,6 +82,28 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-shade-plugin</artifactId>
+          <version>3.1.0</version>
+          <configuration>
+            <relocations>
+              <relocation>
+                <pattern>org.bstats</pattern>
+                <!-- Replace this with your package! -->
+                <shadedPattern>com.foxtanium.fluffyfox</shadedPattern>
+              </relocation>
+            </relocations>
+          </configuration>
+          <executions>
+            <execution>
+              <phase>package</phase>
+              <goals>
+                <goal>shade</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>
