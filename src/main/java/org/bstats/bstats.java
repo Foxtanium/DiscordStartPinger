@@ -1,7 +1,7 @@
 import net.md_5.bungee.api.plugin.Plugin;
 import org.bstats.bungeecord.Metrics;
 
-public class ExamplePlugin extends Plugin {
+public class com.foxtanium.fluffyfox.discordstartpinger extends Plugin {
 
     @Override
     public void onEnable() {
