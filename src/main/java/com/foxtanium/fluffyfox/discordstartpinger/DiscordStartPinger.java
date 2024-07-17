@@ -1,4 +1,4 @@
-package com.github.fluffyfoxuwu.startstoppinger;
+package com.foxtanium.fluffyfox.discordstartpinger;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
 
-public class StartStopPinger extends Plugin {
+public class DiscordStartPinger extends Plugin {
   YamlConfiguration provider =  (YamlConfiguration) ConfigurationProvider.getProvider(YamlConfiguration.class);
   Configuration config;
   File configFile = new File(this.getDataFolder(), "config.yml");
