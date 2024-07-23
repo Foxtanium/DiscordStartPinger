@@ -9,6 +9,7 @@ import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
 
 public class DiscordStartPinger extends Plugin {
+  Metrics.MetricsBase = new Metrics(this);
   YamlConfiguration provider =  (YamlConfiguration) ConfigurationProvider.getProvider(YamlConfiguration.class);
   Configuration config;
   File configFile = new File(this.getDataFolder(), "config.yml");
